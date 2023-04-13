@@ -1,4 +1,4 @@
-# Proyecto-Mongoose---Express---NodeJS
+# Proyecto-Mongoose-Express-NodeJS
 ## Introduccion 
 # Este proyecto se maneja con express, nodejs, mongodb y mongoose
 1. Operaciones CRUD: crear/leer/actualizar/eliminar productos
@@ -6,10 +6,9 @@
 # Instalación
 - git clone https://github.com/ISAAC12345-WEB/Proyecto-Mongoose---Express---NodeJS-.git
 - npm i
-- npm run dev
+- npm run dev 
+El servidor en el puerto 4000
+Mongodb instalado localmente o establecer una variable de entorno MONGODB_URI para conectarse a cualquier instancia de mongodb. El puerto de MongoDB esta por defecto 27017. 
+/ el enlace de MongoDBCompass 
+Podemos abrir otro terminal del mismo visual studio code, ponemos 'mongosh' para trabajar con las colleciones que creamos de mongo. 
 
-*_ Mongodb instalado localmente o establecer una variable de entorno MONGODB_URI para conectarse a cualquier instancia de mongodb. 
-El puerto de MongoDB esta por defecto 27017.
-En la terminal ejecutamos en comando 'npm run dev' para que inicie el proyecto en el puerto 4000. 
-Tambien podemos trabajar con otra terminal, ejecutamos en la terminal 'mongosh' esto se encarga de manejar las colleciones que creamos de mongo. 
-Manejando como find, findOne, findById, etc. 📖
