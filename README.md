@@ -4,7 +4,8 @@
 1. Operaciones CRUD: crear/leer/actualizar/eliminar productos
 2. Inicia el login, su registro de login y guardar sus datos.
 # Imagen Del Login 
-![Screenshot](https://user-images.githubusercontent.com/89948658/231790451-e0812c65-e659-4eea-8672-bc0a304f4ecc.png)
+
+![screenshot](https://user-images.githubusercontent.com/89948658/231792087-a46045ec-e4a7-46fe-aab7-93821db7725d.png)
 
 # Instalación
 - git clone https://github.com/ISAAC12345-WEB/Proyecto-Mongoose---Express---NodeJS-.git
