@@ -9,7 +9,7 @@
 - npm run dev
 
 *_ Mongodb instalado localmente o establecer una variable de entorno MONGODB_URI para conectarse a cualquier instancia de mongodb. 
-El puerto de MongoDB esta por defecto 27017. _
+El puerto de MongoDB esta por defecto 27017.
 En la terminal ejecutamos en comando 'npm run dev' para que inicie el proyecto en el puerto 4000. 
 Tambien podemos trabajar con otra terminal, ejecutamos en la terminal 'mongosh' esto se encarga de manejar las colleciones que creamos de mongo. 
 Manejando como find, findOne, findById, etc. 📖
