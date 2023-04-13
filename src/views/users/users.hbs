@@ -3,58 +3,21 @@
         <div class="col-md-3 mt-3">
             <div class="card">
                 <div class="card-body text-center">
-                    <img src="/img/logo.png" class="rounded-circle mx-auto d-block m-4 logo" alt="">
-                    <h1>| {{name}} | </h1>
-                    <h5>| {{email}} |</h5>
-                    <h3>| {{rol}} |</h3>
-                    
-                <div class="d-grid gap-2 d-md-block">
-                </div>
+                    <img src="/img/logo1.png" class="rounded-circle mx-auto d-block m-3 logo" alt="">
+                    <h5> {{name}} </h5>
+                    <h5> {{email}} </h5>
+                    <h3> {{rol}} </h3>
                 <td>
-                     <a href="/users/edit/{{_id}}" class="btn btn-outline-success btn-block"> ACTUALIZAR</a>
+                     <a href="/users/edit/{{_id}}" class="btn btn-outline-dark btn-block"> ACTUALIZAR</a>
                      <form action="/users/delete/{{_id}}?_method=delete" method="post">
                       <input type="hidden" name="_method" value="delete">
-                      <button type="submit" class="btn btn-outline-danger btn-block">ELIMINAR</button>
+                      <button type="submit" class="btn btn-outline-warning btn-block mt-1">ELIMINAR</button>
                       </form></td>
                 </div>
             </div>
         </div>
     {{/each}}
-    <div class="container">
-          <div class="container mt-3 text-center">
-             <a href="/producto/add" class="btn btn-primary mt-5">CREAR PRODUCTO</a>
-             <!--<a href="/users" class="btn btn-primary mt-5">VER USUARIOS</a>-->
-            </div>
-
-        <table class="table table-bordered table-center text-center mt-4">
-          <thead>
-            <tr class="bg-primary text-white">
-               
-                <th scope="col">TITULO</th>
-                <th scope="col">PRECIO</th>
-                <th scope="col">ACCIONES</th>
-            </tr> 
-          </thead>
-          <tbody class="border border-dark bg-secondary text-black">
-            <!--Poner un foreach para que recorra el contenido, leemos la BD creada-->
-           {{#each products}}
-              <tr>
-                <td>{{titulo}}</td>
-                <td>{{precio}} €</td>
-                 <td><a href="/producto/edit/{{_id}}" class="btn btn-success">EDITAR</a>
-                  <a action="/producto/delete/{{_id}}?_method=delete" method="post">
-                      <input type="hidden" name="_method" value="delete">
-                      <button type="submit" class="btn btn-danger ">ELIMINAR</button>
-                    </a></td>
-              </tr>
-            {{/each}}
-          </tbody>
-          
-        </table>
-       
-      </div>
     
-    <!--
-    <div class="container mt-5 text-center">
-        <a href="/productos" class="btn btn-primary mt-5">VER LOS PRODUCTOS</a>
-    </div>-->
+    <div class="container text-center">
+        <a href="/productos" class="btn btn-secondary mt-5">VER LOS PRODUCTOS</a>
+    </div>

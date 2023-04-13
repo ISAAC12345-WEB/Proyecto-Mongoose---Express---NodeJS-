@@ -7,10 +7,10 @@
             <form action="/producto/edit/{{editar._id}}?_method=put" method="post">
                     <input type="hidden" name="_method" value="put">
                     <div class="form-group">
-                        <input type="text" name="titulo" class="form-control" value="{{editar.titulo}}" placeholder="titulo" autofocus>
+                        <input type="text" name="titulo" class="form-control" value="{{editar.titulo}}" placeholder="titulo" required>
                     </div>
                     <div class="form-group">
-                        <input type="number" step="any" name="precio" class="form-control" value="{{editar.precio}}" placeholder="precio">
+                        <input type="number" step="any" name="precio" class="form-control" value="{{editar.precio}}" placeholder="precio" required>
                     </div>
                     <div class="form-group">
                         <button class="btn btn-success">ACTUALIZAR</button>

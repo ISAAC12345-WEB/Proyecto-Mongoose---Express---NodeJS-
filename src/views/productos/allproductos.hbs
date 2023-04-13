@@ -2,37 +2,26 @@
     {{#each products}}
         <div class="col-md-3 mt-3">
             <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-between align-items-center">
-                      | {{titulo}} | <a href="/producto/edit/{{_id}}"><i>✏️</i></a>
+                <div class="card-body text-center">
+                    <h5 class="card-title justify-content-between align-items-center">
+                      {{titulo}}
                       </h5>
-                    <p>| {{precio}} |</p>
-                    <form action="/producto/delete/{{_id}}?_method=delete" method="post">
-                      <input type="hidden" name="_method" value="delete">
-                      <button type="submit" class="btn btn-danger btn-block">ELIMINAR</button>
-                    </form>
+                    <h3>{{precio}} €</h3>
+                        <td>
+                            <a href="/producto/edit/{{_id}}" class="btn btn-success btn-block ">EDITAR</a>
+                          <form action="/producto/delete/{{_id}}?_method=delete" method="post">
+                            <input type="hidden" name="_method" value="delete">
+                            <button type="submit" class="btn btn-danger btn-block mt-1">ELIMINAR</button>
+                          </form>
+                        </td>                    
                 </div>
             </div>
         </div>
     {{/each}}
-   <!-- <div class="row">
-    {{#each users}}
-        <div class="col-md-3 mt-3">
-            <div class="card">
-                <div class="card-body text-center">
-                    <img src="/img/logo.png" class="rounded-circle mx-auto d-block m-4 logo" alt="">
-                    <h1>| {{name}} |</h1>
-                    <h5>| {{email}} |</h5>
-                    <h3>| {{rol}} |</h3>
-                </div>
-            </div>
-        </div>
-    {{/each}}-->
-  
 <div class="container">
-          <div class="container mt-3 text-center">
-             <!--<a href="/producto/add" class="btn btn-primary mt-5">CREAR PRODUCTO</a>-->
-             <a href="/users" class="btn btn-primary mt-5">VER USUARIOS</a>
+          <div class="container text-center">
+             <a href="/producto/add" class="btn btn-primary mt-5">CREAR PRODUCTO</a>
+             <a href="/users" class="btn btn-secondary mt-5">VER USUARIOS</a>
             </div>
 
         <table class="table table-bordered table-center text-center mt-4">
@@ -40,7 +29,6 @@
             <tr class="bg-primary text-white">
                 <th scope="col">TITULO</th>
                 <th scope="col">PRECIO</th>
-                <!--<th scope="col">ACCIONES</th>-->
             </tr> 
           </thead>
           
@@ -50,11 +38,6 @@
               <tr>
                 <td>{{titulo}}</td>
                 <td>{{precio}} €</td>
-                 <!-- <td><a href="/producto/edit/{{_id}}" class="btn btn-success">EDITAR</a>
-                  <a action="/producto/delete/{{_id}}?_method=delete" method="post">
-                      <input type="hidden" name="_method" value="delete">
-                      <button type="submit" class="btn btn-danger ">ELIMINAR</button>
-                    </a></td>-->
               </tr>
             {{/each}}
           </tbody>

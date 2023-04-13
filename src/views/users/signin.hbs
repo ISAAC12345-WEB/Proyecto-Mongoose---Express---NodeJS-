@@ -3,21 +3,20 @@
         <div class="card-header">
               <h3>LOGIN</h3>  
         </div>
-        <img src="/img/logo.png" class="rounded-circle mx-auto d-block m-4 logo">
-
+        <img src="/img/logo1.png" class="rounded-circle mx-auto d-block m-4 logo">
         <div class="card-body">
             <form action="/users/signin" method="POST">
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required >
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder="Contraseña" required >
+                </div>
                 
                 <div class="form-group">
-                    <input type="email" name="email" class="form-control" placeholder="Email">
+                    <button class="btn btn-primary">ENTRAR</button>
                 </div>
-                <div class="form-group">
-                    <input type="password" name="password" class="form-control" placeholder="Contraseña">
-                </div>
-                
-                <div class="form-group">
-                    <button class="btn btn-primary">GUARDAR</button>
-                </div>
+                <p> No tienes cuenta ? <a href="/users/signup">Registrate</a></p>
             </form>
         </div>
     </div>

@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-//const {} = require('../helpers/validator')
-
 const {renderProductoAdd, createProductoAdd, renderProductos, 
     renderEditForm, actualizarEditForm ,eliminarFormProducto} 
     = require('../controllers/product.controller');

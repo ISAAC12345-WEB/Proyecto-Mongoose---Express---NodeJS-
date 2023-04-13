@@ -7,13 +7,12 @@ const override = require('method-override')
 const flash = require('connect-flash');
 const passport = require('passport')
 const session = require('express-session')
-//require('./config/passport')
 
 //inicializacion
 const app = express()
 //configuracion
 app.set('port', process.env.PORT || 4000);
-app.set('views', path.join(__dirname, 'views'));//rutas o direccion de la ruta 
+app.set('views', path.join(__dirname, 'views'));//direccion de la ruta 
 app.engine('.hbs', exphbs.engine({
     defaultLayout: 'main',
     layoutsDir: path.join(app.get('views'), 'layouts'),
@@ -23,7 +22,7 @@ app.engine('.hbs', exphbs.engine({
 app.set('view engine', '.hbs');
 //midlewares
 app.use(express.urlencoded({extended:false}));
-app.use(morgan('dev'))//estamos en desarrollo
+app.use(morgan('dev'))
 app.use(override('_method'))
 app.use(session({
     secret: 'secret',
@@ -39,12 +38,10 @@ app.use((req, res, next) =>{
     res.locals.success_msg = req.flash('success_msg')
     res.locals.failed_msg = req.flash('failed_msg')
     res.locals.successlly_msg = req.flash('successlly_msg')
-    //res.locals.error = req.flash('error')
     res.locals.user = req.user || null;
-    next();//sino utilizo el next botara error
+    next();//sino utilizo el next() botara error
 })
 //routes
-/*app.get('/',(req,res) =>{ res.render('index'); })*/
  app.use(require('./routes/route'));
  app.use(require('./routes/product.route'));
  app.use(require('./routes/user.route'));

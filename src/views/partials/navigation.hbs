@@ -5,10 +5,10 @@
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    {{#if users}}
-                    <!-- AQUI si hay user lo muestra -->
-                    {{else}}
-                    <li class="nav-item"> <!--sino aparece esta ruta-->
+                    {{#if users}}  <!-- AQUI si hay user lo muestra -->
+                    
+                    {{else}}<!--sino aparece esta ruta-->
+                    <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="/">Pagina Principal</a>
                     </li>
                     <li class="nav-item">
@@ -21,17 +21,11 @@
                      <li class="nav-item">
                         <a href="/users/logout" class="nav-link">Salir</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="/productos" class="nav-link">All Productos</a>
-                    </li>
                     {{else}}<!--SI NO SE ENCUENTRA LOGEADO, QUE ME APAREZCA ESTA RUTAS-->
                     <li class="nav-item">
                         <a href="/users/signin" class="nav-link">Login</a>
                     </li>
-                     <li class="nav-item"> 
-                        <a href="/users/signup" class="nav-link">Registro</a>
-                    </li>  
-                    {{/if}}<!---->
+                    {{/if}}
                 </ul>
                 
             </div>

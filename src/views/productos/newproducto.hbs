@@ -6,13 +6,13 @@
         <div class="card-body">
             <form action="/producto/nuevoproducto" method="POST">
                 <div class="form-group">
-                    <input type="text" name="titulo" class="form-control" placeholder="titulo" autofocus>
+                    <input type="text" name="titulo" class="form-control" placeholder="titulo" required>
                 </div>
                 <div class="form-group">
-                    <input type="number" step="any" name="precio" class="form-control" placeholder="precio">
+                    <input type="number" step="any" name="precio" class="form-control" placeholder="precio" required>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-primary">GUARDAR</button>
+                    <button class="btn btn-primary">AGREGAR</button>
                     <a href="/productos" class="btn btn-secondary text-black">CANCELAR</a>
                 </div>
             </form>

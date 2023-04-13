@@ -4,9 +4,7 @@ const mongodb_uri = `mongodb://${MONGODB_HOST}/${MONGODB_DATABASE}`;//alt+96 ``
 
 mongoose.connect(mongodb_uri, {
     useNewUrlParser: true,
-    useUnifiedTopology:true,
-    //useCreateIndex:true,
-    //useFindAndModify:false 
+    useUnifiedTopology:true
 })
-.then(()=>console.log('conexion a MongoDB !!'))
+.then(()=>console.log('Conexion a MongoDB !!'))
 .catch(console.error);
