@@ -6,10 +6,9 @@
 # Instalación
 - git clone https://github.com/ISAAC12345-WEB/Proyecto-Mongoose---Express---NodeJS-.git
 - npm i
-- npm run dev 
-# El servidor en el puerto 4000
+- npm run dev "El servidor en el puerto 4000"
+
 *Mongodb instalado localmente o establecer una variable de entorno MONGODB_URI para conectarse a cualquier instancia de mongodb. El puerto de MongoDB esta por defecto 27017.*
 - [Dejo el link de descarga de MongoDBCompass](https://www.mongodb.com/try/download/compass).
-
-Podemos abrir otro terminal del mismo visual studio code, ponemos 'mongosh' para trabajar con las colleciones que creamos de mongo. 
+*Podemos abrir otro terminal del mismo visual studio code, ponemos 'mongosh' para trabajar con las colleciones que creamos de mongo.*
 
