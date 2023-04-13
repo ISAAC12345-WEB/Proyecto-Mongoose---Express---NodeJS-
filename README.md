@@ -9,7 +9,6 @@
 - npm run dev 
 # El servidor en el puerto 4000
 *Mongodb instalado localmente o establecer una variable de entorno MONGODB_URI para conectarse a cualquier instancia de mongodb. El puerto de MongoDB esta por defecto 27017.*
-Dejo el siguiente enlace de MongoDBcompass
-- (https://www.mongodb.com/products/compass)
+- [Dejo el siguiente enlace de MongoDBcompass](https://www.mongodb.com/products/compass)
 Podemos abrir otro terminal del mismo visual studio code, ponemos 'mongosh' para trabajar con las colleciones que creamos de mongo. 
 
