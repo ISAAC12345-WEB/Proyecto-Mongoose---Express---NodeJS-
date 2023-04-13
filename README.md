@@ -15,7 +15,7 @@
 *Mongodb instalado localmente o establecer una variable de entorno MONGODB_URI para conectarse a cualquier instancia de mongodb. El puerto de MongoDB esta por defecto 27017.*
 - [Dejo el link de descarga de MongoDBCompass](https://www.mongodb.com/try/download/compass).
 
-*El MongoDBShell se trabaja con el cmd o tambien de tu visual studio abriendo el termnial.*
+*El MongoDBShell se trabaja con el cmd o tambien de tu visual studio abriendo el terminal.*
 - [Dejo el link de descarga de MongoDBShell](https://www.mongodb.com/try/download/shell).
 
 *Podemos abrir otro terminal del mismo visual studio code, ponemos 'mongosh' para trabajar con las colleciones que creamos de mongo.*
