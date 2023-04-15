@@ -19,7 +19,7 @@
 3. Desde bin Click derecho para abrir PowerShell colocamos ".\mongod.exe --version", si sale la version es porque esta correcto
 4. Agregamos la ruta de la carpeta del segundo paso al Path ó variables de entorno de tu equipo.
 5. Ahora volvemos a poner en el cmd "mongod --version" y listo.
-- Para empezar a trabajar nos vamos en la carpeta unidad C de tu equipo, creamos una carpeta "data" y dentro de la carpeta "db"
+- Nos vamos en la carpeta unidad C de tu equipo, creamos una carpeta "data" y dentro de la carpeta "db"
 - En el cmd ponemos "mongod" para que se mantenga ejecutando.
 
 
