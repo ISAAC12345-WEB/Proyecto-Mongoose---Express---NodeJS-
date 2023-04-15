@@ -12,11 +12,21 @@
 - npm i
 - npm run dev "El servidor en el puerto 4000"
 
+*Aqui el instalador de MongoDB Community Server para empezar a trabajar. *
+- [Link MongoDB Community server](https://www.mongodb.com/try/download/community)
+1. Abrimos la consola o el cmd (Win + r) y colocamos "mongod --version".
+2. Si no sale o no lo reconoce, nos vamos en archivos de programa -> MongoDB -> Server -> (version de mongo 6.0) -> bin
+3. Desde bin Click derecho para abrir PowerShell colocamos ".\mongod.exe --version", si sale la version es porque esta correcto
+4. Agregamos la direccion de la carpeta de la ruta del segundo paso al Path ó variables de entorno de tu equipo.
+5. Ahora volvemos a poner en el cmd "mongod --version" y listo.
+
+*Interfaz grafica para utilizar la base de datos.*
 *Mongodb instalado localmente o establecer una variable de entorno MONGODB_URI para conectarse a cualquier instancia de mongodb. El puerto de MongoDB esta por defecto 27017.*
-- [Dejo el link de descarga de MongoDBCompass](https://www.mongodb.com/try/download/compass).
+- [Link de MongoDBCompass](https://www.mongodb.com/try/download/compass).
 
-*El MongoDBShell se trabaja con el cmd o tambien de tu visual studio abriendo el terminal.*
-- [Dejo el link de descarga de MongoDBShell](https://www.mongodb.com/try/download/shell).
-
-*Podemos abrir otro terminal del mismo visual studio code, ponemos 'mongosh' para trabajar con las colleciones que creamos de mongo.*
-
+*El MongoDBShell se trabaja con el cmd o tambien de tu visual studio abriendo el terminal. Deben descargar el MongoDBShell de la pagina oficial de mongo, descomprimir el zip  pegarlo en la carpeta 6.0 o la version que tengan, y el comando ponemos "mongosh". Algunos pasos aquí*
+- [Link de descarga de MongoDBShell](https://www.mongodb.com/try/download/shell).
+1. Abrimos la consola o el cmd (Win + r) y colocamos "mongosh --version".
+2. Si no sale o no lo reconoce, nos vamos en archivos de programa -> MongoDB -> Server -> (version de mongo 6.0) -> bin.
+3. En mi caso como descargue mongoshell, coloque el .zip en la ruta de MongoDB de la ruta del primer paso y descomprimí el archivo .zip.
+5. Volvemos abrir la consola o cmd, colocamos "mongosh --version" y listo.
