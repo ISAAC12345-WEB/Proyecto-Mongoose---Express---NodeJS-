@@ -17,8 +17,11 @@
 1. Abrimos la consola o el cmd (Win + r) y colocamos "mongod --version".
 2. Si no sale o no lo reconoce, nos vamos en archivos de programa -> MongoDB -> Server -> (version de mongo 6.0) -> bin
 3. Desde bin Click derecho para abrir PowerShell colocamos ".\mongod.exe --version", si sale la version es porque esta correcto
-4. Agregamos la direccion de la carpeta de la ruta del segundo paso al Path ó variables de entorno de tu equipo.
+4. Agregamos la ruta de la carpeta del segundo paso al Path ó variables de entorno de tu equipo.
 5. Ahora volvemos a poner en el cmd "mongod --version" y listo.
+- Para empezar a trabajar nos vamos en la carpeta unidad C de tu equipo, creamos una carpeta "data" y dentro de la carpeta "db"
+- En el cmd ponemos "mongod" para que se mantenga ejecutando.
+
 
 *Interfaz grafica para utilizar la base de datos.*
 *Mongodb instalado localmente o establecer una variable de entorno MONGODB_URI para conectarse a cualquier instancia de mongodb. El puerto de MongoDB esta por defecto 27017.*
@@ -28,5 +31,5 @@
 - [Link de descarga de MongoDBShell](https://www.mongodb.com/try/download/shell).
 1. Abrimos la consola o el cmd (Win + r) y colocamos "mongosh --version".
 2. Si no sale o no lo reconoce, nos vamos en archivos de programa -> MongoDB -> Server -> (version de mongo 6.0) -> bin.
-3. En mi caso como descargue mongoshell, coloque el .zip en la ruta de MongoDB de la ruta del primer paso y descomprimí el archivo .zip.
+3. En mi caso como descargue mongoshell, coloque el .zip en la direccion de MongoDB del primer paso y descomprimí el archivo .zip.
 5. Volvemos abrir la consola o cmd, colocamos "mongosh --version" y listo.
