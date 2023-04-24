@@ -11,7 +11,7 @@ const session = require('express-session')
 //inicializacion
 const app = express()
 //configuracion
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));//direccion de la ruta 
 app.engine('.hbs', exphbs.engine({
     defaultLayout: 'main',

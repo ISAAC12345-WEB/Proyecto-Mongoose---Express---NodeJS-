@@ -1,8 +1,7 @@
 const productCtr = {}
-//importar mongoose y models que creamos, osea la schema 
+//importar mongoose y models que creamos, la schema 
 const Producto = require('../models/producto');
 const User = require('../models/user');
-
 //agregar producto
 productCtr.renderProductoAdd = async(req,res)=> {
     const users = await User.find().lean();
@@ -32,12 +31,12 @@ productCtr.actualizarEditForm = async (req,res) => {
     const {titulo, precio} = req.body 
     await Producto.findByIdAndUpdate(req.params.id,{titulo:titulo,precio:precio}).lean()
     console.log(req.body)
-    req.flash('success_msg','PRODUCTO ACTUALIZADO CORRECTAMENTE')
+    req.flash('success_msg', 'PRODUCTO ACTUALIZADO CORRECTAMENTE')
     res.redirect('/productos')
 }
 productCtr.eliminarFormProducto = async (req,res) => {
     await Producto.findByIdAndDelete(req.params.id)
-    req.flash('success_msg','PRODUCTO ELIMINADO CORRECTAMENTE')
+    req.flash('success_msg', 'PRODUCTO ELIMINADO CORRECTAMENTE')
     res.redirect('/productos')//redirecciones a la ruta especifica
 }
 module.exports = productCtr

@@ -31,7 +31,7 @@ userCtrl.rendersigninForm = (req,res) =>{
     res.render('users/signin')
 }
 userCtrl.signin = async(req,res)=>{
-    req.flash('successlly_msg', 'BIENVENIDO 🧑‍💻!!');
+    req.flash('successlly_msg', 'BIENVENIDO 🧑‍💻 !');
     res.redirect('/users')
 }
 //actualizacion
@@ -55,8 +55,10 @@ userCtrl.eliminarFormUser = async (req,res) => {
 }
 //salirse del login
 userCtrl.logout = (req,res)=>{
-    req.logout( (err) => {
-        if (err) { return next(err); }
+    req.logout((err) => {
+        if (err) { 
+            return next(err); 
+        }
         req.flash("success_msg" , "SESION CERRADA, NOS VEMOS PRONTO 🙋" );
         res.redirect( "/users/signin" );
     });
