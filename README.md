@@ -10,7 +10,7 @@
 # Instalación
 - git clone https://github.com/ISAAC12345-WEB/Proyecto-Mongoose---Express---NodeJS-.git
 - npm i
-- npm run dev "El servidor en el puerto 4000"
+- npm run dev "El servidor en el puerto 3000"
 
 *Aqui el instalador de MongoDB Community Server para empezar a trabajar. *
 - [Link MongoDB Community server](https://www.mongodb.com/try/download/community)
@@ -31,5 +31,5 @@
 - [Link de descarga de MongoDBShell](https://www.mongodb.com/try/download/shell).
 1. Abrimos la consola o el cmd (Win + r) y colocamos "mongosh --version".
 2. Si no sale o no lo reconoce, nos vamos en archivos de programa -> MongoDB -> Server -> (version de mongo 6.0) -> bin.
-3. En mi caso como descargue mongoshell, coloque el .zip en la direccion de MongoDB del primer paso y descomprimí el archivo .zip.
+3. En mi caso como descargue mongoshell, coloque el .zip en la direccion de MongoDB del segundo paso y descomprimí el archivo .zip.
 5. Volvemos abrir la consola o cmd, colocamos "mongosh --version" y listo.
